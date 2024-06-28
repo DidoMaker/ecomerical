@@ -1,0 +1,44 @@
+.root-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 1528px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Style the title inside the navigation bar */
+  nav h1 {
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  /* Add a hover effect to navigation links */
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the main content area */
+  main {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
