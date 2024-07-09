@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { NavLink, Outlet } from "react-router-dom"
 import './LoginForm.css';
 import { FaUser, FaLock } from "react-icons/fa";
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"></link>
 
 class LoginForm extends Component {
@@ -45,18 +47,22 @@ class LoginForm extends Component {
                         <FaLock className="icon"/>
 
                     </div>
-                    <div className="remember-forgot">
+                    <div className="remember">
                         <label>
                             <input type="checkbox" />Remember me
                         </label>
-                        <a href="https://www.facebook.com/">forgot password</a>
+                    </div>
+                    <div className="Forget">
+                        <NavLink to="FGPW">Forget password</NavLink>
+                    </div>
+                    <div className="register-link">
+                        <p>Don't have account? 
+                            <NavLink to="create">Register</NavLink>
+                            <Outlet />
+                        </p> 
                     </div>
                     <div className=''>
                         <button type="submit" onClick= {() => {this.handleonLogin() }}>login</button>
-                    </div>
-                    
-                    <div className="register-link">
-                        <p>Don't have account? <a href="https://www.youtube.com/">Register</a></p>
                     </div>
                     <div className="another-account">
                         <span className="text center">Or login with</span>
